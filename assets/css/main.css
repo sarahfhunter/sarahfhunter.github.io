@@ -3919,3 +3919,17 @@ input, select, textarea {
 p {
     overflow: hidden; /* Ensure the paragraph clears floated images */
 }
+
+.video-text-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Adjust the gap between the video and text as needed */
+}
+
+.video-text-container iframe {
+    flex: 0 0 auto; /* Prevent the iframe from shrinking */
+}
+
+.video-text-container p {
+    flex: 1; /* Allow the paragraph to take up the remaining space */
+}
