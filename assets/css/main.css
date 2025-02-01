@@ -3926,10 +3926,10 @@ p {
     gap: 20px; /* Adjust the gap between the video and text as needed */
 }
 
-.video-text-container iframe {
-    flex: 0 0 auto; /* Prevent the iframe from shrinking */
+.video-text-container .text-content {
+    flex: 1; /* Allow the text content to take up the remaining space */
 }
 
-.video-text-container p {
-    flex: 1; /* Allow the paragraph to take up the remaining space */
+.video-text-container iframe {
+    flex: 0 0 auto; /* Prevent the iframe from shrinking */
 }
