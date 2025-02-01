@@ -3933,3 +3933,25 @@ p {
 .video-text-container iframe {
     flex: 0 0 auto; /* Prevent the iframe from shrinking */
 }
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.image-content {
+    flex: 0 0 auto;
+    margin-left: 20px; /* Adjust the margin as needed */
+}
+
+.rounded-image {
+    width: 300px; /* Adjust the size as needed */
+    height: 300px; /* Adjust the size as needed */
+    border-radius: 50%;
+    object-fit: cover;
+}
