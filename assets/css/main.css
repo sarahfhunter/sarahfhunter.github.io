@@ -2619,6 +2619,26 @@ input, select, textarea {
 			display: inline-block;
 		}
 
+		.image.right.rounded {
+			float: right;
+			width: 50%; /* Adjust size */
+			max-width: 250px; /* Limits size on larger screens */
+			margin: 0 8em 1em 1.5em; /* Space between image and text */
+			border-radius: 50%;
+			overflow: hidden; /* Ensures edges stay rounded */
+			display: block;
+		}
+
+		@media (max-width: 600px) {
+			.image.right.rounded {
+				width: 100%; /* Makes image full width on small screens */
+				max-width: none; /* Ensures it fully adapts */
+				float: none; /* Removes float so it stacks above text */
+				margin: 0 auto; /* Centers it */
+				display: block;
+			}
+		}
+
 		.image.fit {
 			display: block;
 			margin: 0 0 2em 0;
@@ -3934,50 +3954,11 @@ input, select, textarea {
 
 		}
 
-.image.left {
-    margin-bottom: 20px; /* Adjust this value as needed */
-}
-
-.image.right {
-    margin-bottom: 20px; /* Adjust this value as needed */
-}
-
 p {
     overflow: hidden; /* Ensure the paragraph clears floated images */
 }
 
-.video-text-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px; /* Adjust the gap between the video and text as needed */
-}
 
-.video-text-container .text-content {
-    flex: 1; /* Allow the text content to take up the remaining space */
-}
-
-.video-text-container iframe {
-    flex: 0 0 auto; /* Prevent the iframe from shrinking */
-}
-
-.intro-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.text-content {
-    flex: 1;
-}
-
-.image-content {
-    flex: 0 0 auto;
-    margin-left: 20px; /* Adjust the margin as needed */
-}
-
-.rounded-image {
-    width: 300px; /* Adjust the size as needed */
-    height: 300px; /* Adjust the size as needed */
-    border-radius: 50%;
-    object-fit: cover;
+.intro-container {
+    overflow: hidden; /* Ensures proper layout */
 }
